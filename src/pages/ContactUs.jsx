@@ -3,10 +3,10 @@ import { HeaderLabel, ContactList } from "../constants/ContactUsConstant";
 const Contact = ({ icon, title, description, link, linkText, language}) => {
   return (
     <>
-      <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+      <div className="p-6 bg-primary rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
         <div className="mb-4">{icon}</div>
-        <h3 className="text-xl font-semibold text-gray-900">{title[language]}</h3>
-        <p className="text-gray-600 mt-2">{description[language]}</p>
+        <h3 className="text-xl font-semibold text-secondary">{title[language]}</h3>
+        <p className="text-secondary mt-2">{description[language]}</p>
         <a
           href={link}
           className="text-blue-600 font-medium mt-2 hover:underline"
@@ -21,10 +21,10 @@ const Contact = ({ icon, title, description, link, linkText, language}) => {
 const ContactSection = ({ language }) => {
   return (
     <section className="max-w-5xl mx-auto py-16 px-8 text-center">
-      <h2 className="text-4xl font-bold text-gray-900">
+      <h2 className="text-4xl font-bold text-secondary">
         {HeaderLabel.ContactUs[language]}
       </h2>
-      <p className="text-gray-600 mt-2">
+      <p className="text-secondary mt-2">
         {HeaderLabel.ContactUsDescription[language]}
       </p>
 

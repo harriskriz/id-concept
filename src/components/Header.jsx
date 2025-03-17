@@ -1,13 +1,15 @@
 // src/components/Header.js
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { BaseSetting } from "../constants/BaseConstant";
+import logo from "../assets/id-concept-logo.jpg";
 
 const CustomLink = ({ title, url }) => {
   return (
     <Link
       to={url}
       className={`hover:text-blue-600 cursor-pointer ${
-        useLocation().pathname == url ? "text-blue-600" : "text-gray-700"
+        useLocation().pathname == url ? "text-blue-600" : "text-secondary"
       }`}
     >
       {title}
@@ -47,24 +49,38 @@ const LanguageSwitcer = ({ toggleLanguage, language }) => {
 };
 
 export default function Header({ toggleLanguage, language }) {
+  const [useMultipleLanguage, setuseMultipleLanguage] = useState(
+    BaseSetting.MultipleLanguageControl
+  );
   return (
-    <header className="bg-white shadow-md">
-      <div className="container p-4 flex justify-between items-center">
-        <div className="flex items-center w-1/8 justify-center">
-          <p className="text-xl font-bold text-blue-600">Logo</p>
+    <header className="bg-primary shadow-md">
+      <div className="container p-2 flex justify-between items-center">
+        <div className="flex items-center w-1/4 justify-center">
+          <img src={logo} width={60} height={60}/>
         </div>
 
-        <nav className="flex justify-between items-center w-1/3 px-2 space-x-6">
+        <nav className="flex justify-between items-center w-1/2 xl:w-1/3 px-2 space-x-6">
           <CustomLink title="Home" url="/" />
           <CustomLink title="Services" url="/services" />
           <CustomLink title="Contact Us" url="/contact-us" />
           <CustomLink title="FAQ" url="/faq" />
         </nav>
 
-        <div className="flex justify-center items-center w-1/8">
-          <LanguageSwitcer toggleLanguage={toggleLanguage} language={language} />
+        {useMultipleLanguage === true ? 
+          <div
+            className="flex justify-center items-center w-1/4"
+          >
+            <LanguageSwitcer
+              toggleLanguage={toggleLanguage}
+              language={language}
+            />
+          </div> :
+          <div
+          className="flex justify-center items-center w-1/8"
+        >
+         
         </div>
-
+        }
       </div>
     </header>
   );

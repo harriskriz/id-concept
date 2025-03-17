@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #333333; 
+  --color-secondary: #CCCCCC; 
+  --color-primary-button: #007BFF; 
+  --color-secondary-button: #008080; 
+}
+
 /* @import "tailwindcss/preflight";
 @tailwind utilities; */
 

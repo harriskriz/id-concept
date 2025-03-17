@@ -14,7 +14,7 @@ export const HeaderLabel = {
 
 export const ContactList = [
   {
-    icon: <Mail size={40} className="text-gray-700" />,
+    icon: <Mail size={40} className="text-secondary" />,
     title: { en: "Email", id: "Email" },
     description: {
       en: "Reach us at admin@idconcept.pro for inquiries and support.",
@@ -24,7 +24,7 @@ export const ContactList = [
     linkText: "admin@idconcept.pro",
   },
   {
-    icon: <Phone size={40} className="text-gray-700" />,
+    icon: <Phone size={40} className="text-secondary" />,
     title: { en: "Phone", id: "Telepon" },
     description: {
       en: "Call us at your convenience.",

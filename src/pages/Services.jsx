@@ -2,20 +2,19 @@ import { ServicesLabel } from "../constants/ServicesConstant";
 
 const Service = ({ serviceTitle, serviceDetail, language }) => {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-8 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-4xl font-bold text-start mb-12 text-gray-800">
+    <section className="max-w-6xl mx-auto py-16 px-8 bg-primary rounded-lg shadow-md">
+      <h2 className="text-4xl font-bold text-start mb-12 text-secondary">
         {serviceTitle[language]}
       </h2>
       <div className="grid md:grid-cols-3 gap-12">
         {serviceDetail.map((service, index) => (
-          <div key={index} className="p-6 bg-white rounded-lg shadow-md">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+          <div key={index} className="p-6 bg-primary rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold text-secondary mb-4">
               {service.title[language]}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-secondary mb-4">
               {service.description[language]}
             </p>
-            {/* <a href="#" className="text-blue-600 font-semibold flex items-center hover:underline">Read More &rarr;</a> */}
           </div>
         ))}
       </div>

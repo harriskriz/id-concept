@@ -9,15 +9,12 @@ import ContactUs from "./pages/ContactUs";
 import Faq from "./pages/Faq";
 
 export default function App() {
-  // State to manage the current language
   const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
 
-  // Save language preference to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("language", language);
   }, [language]);
 
-  // Function to toggle between languages
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === "en" ? "id" : "en"));
   };
@@ -25,11 +22,9 @@ export default function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        {/* Header */}
         <Header toggleLanguage={toggleLanguage} language={language} />
 
-        {/* Body */}
-        <main className="flex-grow">
+        <main className="flex-grow bg-primary">
           <Routes>
             <Route path="/" element={<Home language={language} />} />
             <Route path="/services" element={<Services language={language} />} />
@@ -38,7 +33,6 @@ export default function App() {
           </Routes>
         </main>
 
-        {/* Footer */}
         <Footer />
       </div>
     </Router>
