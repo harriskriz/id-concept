@@ -11,7 +11,7 @@ const Section = ({
   children,
   center = false,
 }) => (
-  <div className="bg-primary shadow-md rounded-lg p-6 my-6">
+  <div className="shadow-md rounded-lg p-6 my-6">
     <h2 className={`text-2xl font-semibold mb-4 text-secondary ${center ? "text-center" : ""}`}>
       {title}
     </h2>
@@ -20,7 +20,7 @@ const Section = ({
 );
 
 const CompanyProfile = ({ language }) => (
-  <div className="text-center bg-primary py-10 rounded-lg shadow-md">
+  <div className="text-center py-10 rounded-lg shadow-md">
     <h1 className="text-5xl font-extrabold mb-4 text-secondary">
       {HomeLabel.CompanyName[language]}
     </h1>
@@ -65,7 +65,7 @@ const Vision = ({ language }) => (
 
 const Mission = ({ language }) => (
   <Section title={HomeLabel.Mission.title[language]} center>
-    <div className="flex flex-col justify-start md:grid-cols-2 gap-4 bg-primary p-6 rounded-lg shadow-sm">
+    <div className="flex flex-col justify-start md:grid-cols-2 gap-4 p-6 rounded-lg shadow-sm">
       {HomeLabel.Mission.Points.map((point, index) => (
         <p key={index} className="text-secondary text-lg">
           {point.description[language]}
@@ -77,7 +77,7 @@ const Mission = ({ language }) => (
 
 export default function Home({ language }) {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 bg-[url(assets/logo-background.png)]">
       <CompanyProfile language={language} />
       <History language={language} />
       <CompetitiveAdvantages language={language} />

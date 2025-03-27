@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BaseSetting } from "../constants/BaseConstant";
 import logo from "../assets/id-concept-logo.jpg";
-import logoBackground from "../assets/id-concept-background.svg";
+import logoBackground from "../assets/logo-background.png";
+import '../components/Header.css'
 
 const CustomLink = ({ title, url }) => {
   return (
@@ -56,7 +57,7 @@ export default function Header({ toggleLanguage, language }) {
   return (
     <header className="bg-primary shadow-md">
       <div className="container p-2 flex justify-between items-center">
-        <div className="flex items-center w-1/4 justify-center">
+        <div className="flex flex- items-center w-1/3 justify-center">
           <img src={logo} width={60} height={60}/>
         </div>
 
@@ -77,9 +78,7 @@ export default function Header({ toggleLanguage, language }) {
             />
           </div> :
           <div
-          className="flex justify-center items-center w-1/8"
-        >
-         
+          className="flex justify-center items-center w-1/8">
         </div>
         }
       </div>

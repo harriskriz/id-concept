@@ -2,7 +2,7 @@ import { ServicesLabel } from "../constants/ServicesConstant";
 
 const Service = ({ serviceTitle, serviceDetail, language }) => {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-8 bg-primary rounded-lg shadow-md">
+    <section className="max-w-6xl mx-auto py-16 px-8 rounded-lg shadow-md">
       <h2 className="text-4xl font-bold text-start mb-12 text-secondary">
         {serviceTitle[language]}
       </h2>
@@ -25,7 +25,7 @@ const Service = ({ serviceTitle, serviceDetail, language }) => {
 export default function Services({ language }) {
   return (
     <>
-      <div className="p-6">
+      <div className="p-6 bg-[url(assets/logo-background.png)]">
         {ServicesLabel.map((service, index) => (
           <Service
             serviceTitle={service.Type}
