@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BaseSetting } from "../constants/BaseConstant";
 import logo from "../assets/id-concept-logo.jpg";
-import logoBackground from "../assets/logo-background.png";
-import '../components/Header.css'
 
 const CustomLink = ({ title, url }) => {
   return (
