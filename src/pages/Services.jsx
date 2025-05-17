@@ -25,7 +25,7 @@ const Service = ({ serviceTitle, serviceDetail, language }) => {
 export default function Services({ language }) {
   return (
     <>
-      <div className="p-6 bg-[url(assets/logo-background.png)]">
+      <div className="p-6">
         {ServicesLabel.map((service, index) => (
           <Service
             serviceTitle={service.Type}

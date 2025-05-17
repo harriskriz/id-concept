@@ -1,7 +1,7 @@
 import { HomeLabel } from "../constants/HomeConstant";
 
 const CustomTag = ({ name }) => (
-  <p className="bg-secondary-button text-secondary w-24 py-2 text-center rounded-lg shadow-sm select-none">
+  <p className="text-secondary font-bold w-24 py-2 text-center rounded-lg shadow-sm select-none">
     {name}
   </p>
 );
@@ -28,11 +28,11 @@ const CompanyProfile = ({ language }) => (
       {HomeLabel.CompanyDescription[language]}
     </p>
     <div className="flex justify-center mt-6 px-4">
-    <div className="flex justify-around w-full xl:w-1/3">
-      {["Concept", "Design", "Build"].map((tag) => (
-        <CustomTag key={tag} name={tag} />
-      ))}
-    </div>
+      <div className="flex justify-around w-full xl:w-1/3">
+        {["Concept", "Design", "Build"].map((tag) => (
+          <CustomTag key={tag} name={tag} />
+        ))}
+      </div>
     </div>
   </div>
 );
@@ -77,7 +77,7 @@ const Mission = ({ language }) => (
 
 export default function Home({ language }) {
   return (
-    <div className="container mx-auto p-6 bg-[url(assets/logo-background.png)]">
+    <div className="main-container-primary-gradient mx-auto p-6">
       <CompanyProfile language={language} />
       <History language={language} />
       <CompetitiveAdvantages language={language} />

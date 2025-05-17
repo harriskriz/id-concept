@@ -20,7 +20,7 @@ const Contact = ({ icon, title, description, link, linkText, language}) => {
 
 const ContactSection = ({ language }) => {
   return (
-    <section className="max-w-5xl mx-auto py-16 px-8 text-center bg-[url(assets/logo-background.png)]">
+    <section className="max-w-5xl mx-auto py-16 px-8 text-center">
       <h2 className="text-4xl font-bold text-secondary">
         {HeaderLabel.ContactUs[language]}
       </h2>
