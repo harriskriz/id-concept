@@ -67,7 +67,7 @@ body{
 @media (max-width: 768px) {
   .main-container-primary-gradient {
     background-image: url('./assets/rotated-logo-background.png');
-    background-size: 90% auto;
+    background-size: 100% auto;
     background-position: center center;
   }
 }
