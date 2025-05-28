@@ -1,7 +1,26 @@
 @import "tailwindcss";
+/* @import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular); */
+/* 
+@font-face {
+    font-family: "PAG Bankas W00 Regular";
+    src: url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.eot");
+    src: url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.svg#PAG Bankas W00 Regular")format("svg");
+} */
+
 @font-face {
   font-family: 'text-default';
   src: url("/src/assets/fonts/myriadroman/MYRIADPRO-REGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'text-header';
+  src: url("/src/assets/fonts/AkzidGrtskNext-Regular.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,37 +38,17 @@ body{
   --color-accent: #fcdd0d;
 
   --font-text-default: 'text-default', sans-serif;
+  --font-text-header: 'text-header', sans-serif;
 }
 
 .text-secondary {
-  @apply text-gray-200 font-text-default;
+  @apply text-gray-200 font-text-header;
   /* font-family: "text-default"; */
 }
 
 .text-accent {
-  @apply text-accent font-text-default;
+  @apply text-accent font-text-header;
   /* font-family: "text-default"; */
-}
-
-/* Style for your main div with a subtle box shadow based on primary color */
-.main-container-primary-shadow {
-  @apply bg-white rounded-lg shadow-md; /* White background, rounded corners, subtle shadow */
-  box-shadow: 0 4px 6px -1px rgba(theme(--color-primary), 0.1), 0 2px 4px -1px rgba(theme(--color-primary), 0.8); /* Subtle shadow using primary color */
-  padding: 2rem; /* Add some padding */
-}
-
-/* Style for your main div with a slightly different shadow using secondary color */
-.main-container-secondary-shadow {
-  @apply bg-white rounded-lg shadow-lg; /* White background, rounded corners, slightly stronger shadow */
-  box-shadow: 0 10px 15px -3px rgba(theme(--color-secondary), 0.1), 0 4px 6px -2px rgba(theme(--color-secondary), 0.05); /* Shadow using secondary color */
-  padding: 2rem; /* Add some padding */
-}
-
-/* Style for a subtle inner shadow effect (can create a sense of depth) */
-.main-container-inner-shadow {
-  @apply bg-white rounded-lg;
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* Subtle inner shadow */
-  padding: 2rem; /* Add some padding */
 }
 
 /* Example of using a background gradient based on your primary color (subtle) */
@@ -57,15 +56,8 @@ body{
   @apply rounded-lg p-4;
   /* background-image: linear-gradient(to bottom, rgba(theme(--color-primary), 0.05), transparent); Subtle gradient */
   background-image:url('./assets/logo-background.png');
-  background-size: 100% auto; /* full width, auto height */
+  background-size: 90% auto; /* full width, auto height */
   background-attachment: fixed; /* makes it stick while scrolling */
   background-repeat: no-repeat;
   background-position: center center; /* aligns the image */
-}
-
-/* Example of using a subtle border that creates a visual separation */
-.main-container-primary-border {
-  @apply bg-white rounded-lg border;
-  border-color: rgba(theme(--color-primary), 0.2); /* Subtle border */
-  padding: 2rem; /* Add some padding */
 }
