@@ -54,10 +54,20 @@ body{
 /* Example of using a background gradient based on your primary color (subtle) */
 .main-container-primary-gradient {
   @apply rounded-lg p-4;
-  /* background-image: linear-gradient(to bottom, rgba(theme(--color-primary), 0.05), transparent); Subtle gradient */
-  background-image:url('./assets/logo-background.png');
-  background-size: 90% auto; /* full width, auto height */
-  background-attachment: fixed; /* makes it stick while scrolling */
+  background-image: url('./assets/logo-background.png');
+  background-size: 80% auto;
   background-repeat: no-repeat;
-  background-position: center center; /* aligns the image */
+  background-position: center center;
+  background-attachment: fixed; /* Makes it sticky */
+  z-index: 0;
+  position: relative;
+}
+
+/* Rotate background on small screens */
+@media (max-width: 768px) {
+  .main-container-primary-gradient {
+    background-image: url('./assets/rotated-logo-background.png');
+    background-size: 70% auto;
+    background-position: center center;
+  }
 }
