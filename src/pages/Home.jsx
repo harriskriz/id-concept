@@ -1,7 +1,7 @@
 import { HomeLabel } from "../constants/HomeConstant";
 
 const CustomTag = ({ name }) => (
-  <p className="text-secondary font-bold w-24 py-2 text-center rounded-lg shadow-sm select-none">
+  <p className="text-accent font-bold w-24 py-2 text-center rounded-lg shadow-sm select-none">
     {name}
   </p>
 );
@@ -21,10 +21,10 @@ const Section = ({
 
 const CompanyProfile = ({ language }) => (
   <div className="text-center py-10 rounded-lg shadow-md">
-    <h1 className="text-5xl font-extrabold mb-4 text-secondary">
+    <h1 className="text-5xl font-extrabold mb-4 text-accent">
       {HomeLabel.CompanyName[language]}
     </h1>
-    <p className="text-secondary text-lg px-4 max-w-2xl mx-auto">
+    <p className="text-accent text-lg px-4 max-w-2xl mx-auto">
       {HomeLabel.CompanyDescription[language]}
     </p>
     <div className="flex justify-center mt-6 px-4">

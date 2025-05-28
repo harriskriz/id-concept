@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
+@font-face {
+  font-family: 'text-default';
+  src: url("/src/assets/fonts/myriadroman/MYRIADPRO-REGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body{
   overflow-x: hidden;
   background-color: #2f333a;
@@ -9,12 +15,20 @@ body{
   --color-primary: #2f333a; 
   --color-secondary: #a9aaad; 
   --color-primary-button: #007BFF; 
-  --color-secondary-button: #008080; 
+  --color-secondary-button: #008080;
+  --color-accent: #fcdd0d;
+
+  --font-text-default: 'text-default', sans-serif;
 }
 
 .text-secondary {
-  @apply text-gray-200;
-  font-family: "Myriad Concept Roman";
+  @apply text-gray-200 font-text-default;
+  /* font-family: "text-default"; */
+}
+
+.text-accent {
+  @apply text-accent font-text-default;
+  /* font-family: "text-default"; */
 }
 
 /* Style for your main div with a subtle box shadow based on primary color */
@@ -41,7 +55,12 @@ body{
 /* Example of using a background gradient based on your primary color (subtle) */
 .main-container-primary-gradient {
   @apply rounded-lg p-4;
-  background-image: linear-gradient(to bottom, rgba(theme(--color-primary), 0.05), transparent); /* Subtle gradient */
+  /* background-image: linear-gradient(to bottom, rgba(theme(--color-primary), 0.05), transparent); Subtle gradient */
+  background-image:url('./assets/logo-background.png');
+  background-size: 100% auto; /* full width, auto height */
+  background-attachment: fixed; /* makes it stick while scrolling */
+  background-repeat: no-repeat;
+  background-position: center center; /* aligns the image */
 }
 
 /* Example of using a subtle border that creates a visual separation */

@@ -39,8 +39,8 @@ const ContactSection = ({ language }) => {
 
 export default function ContactUs({ language }) {
   return (
-    <>
+    <div className="main-container-primary-gradient">
       <ContactSection language={language} />
-    </>
+    </div>
   );
 }

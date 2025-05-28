@@ -2,7 +2,7 @@ import { ServicesLabel } from "../constants/ServicesConstant";
 
 const Service = ({ serviceTitle, serviceDetail, language }) => {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-8 rounded-lg shadow-md">
+    <section className="max-w-6xl mx-auto py-16 px-8 rounded-lg shadow-md main-container-primary-gradient">
       <h2 className="text-4xl font-bold text-start mb-12 text-secondary">
         {serviceTitle[language]}
       </h2>
