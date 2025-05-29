@@ -1,6 +1,6 @@
 @import "tailwindcss";
-/* @import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular); */
-/* 
+@import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular);
+
 @font-face {
     font-family: "PAG Bankas W00 Regular";
     src: url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.eot");
@@ -9,8 +9,18 @@
     url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.svg#PAG Bankas W00 Regular")format("svg");
-} */
+}
 
+@import url(https://db.onlinewebfonts.com/c/ea250342ec4016561ba9e791c2f39c11?family=Posterama+2001+W04+Regular);
+@font-face {
+    font-family: "Posterama 2001 W04 Regular";
+    src: url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.eot");
+    src: url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.svg#Posterama 2001 W04 Regular")format("svg");
+}
 @font-face {
   font-family: 'text-default';
   src: url("/src/assets/fonts/myriadroman/MYRIADPRO-REGULAR.OTF");
@@ -35,13 +45,18 @@ body{
   --color-secondary: #a9aaad; 
   --color-primary-button: #007BFF; 
   --color-secondary-button: #008080;
-  --color-accent: #fcdd0d;
+  --color-accent: #2be031;
 
   --font-text-default: 'text-default', sans-serif;
-  --font-text-header: 'text-header', sans-serif;
+  --font-text-header: 'PAG Bankas W00 Regular', sans-serif;
 }
 
 .text-secondary {
+  @apply text-gray-200 font-text-default;
+  /* font-family: "text-default"; */
+}
+
+.text-secondary-nav {
   @apply text-gray-200 font-text-header;
   /* font-family: "text-default"; */
 }

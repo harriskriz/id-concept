@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const NavLink = ({title, link}) => {
   return(
-    <a className="text-gray-700 hover:text-blue-600 cursor-pointer" href={link}>{title}</a>
+    <a className="text-primary hover:text-blue-600 cursor-pointer" href={link}>{title}</a>
   );
 };
 

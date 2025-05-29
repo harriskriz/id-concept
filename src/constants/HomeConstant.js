@@ -1,7 +1,7 @@
 export const HomeLabel = {
   CompanyName: {
-    id: "ID Concept",
-    en: "ID Concept",
+    id: "id concept",
+    en: "id concept",
   },
   CompanyDescription: {
     en: "Transforming Spaces into Sanctuaries of Sound and Style",

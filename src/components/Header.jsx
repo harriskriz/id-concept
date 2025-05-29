@@ -9,7 +9,7 @@ const CustomLink = ({ title, url, currentPath, menuOpen, onClick }) => {
   return (
     <Link
       to={url}
-      className={`text-base md:text-xl font-medium px-4 py-2 rounded-md hover:text-blue-600 transition ${
+      className={`text-base text-secondary-nav md:text-xl font-medium px-4 py-2 rounded-md hover:text-blue-600 transition ${
         currentPath === url ? "text-blue-600" : "text-secondary"
       }`}
     >
