@@ -57,9 +57,8 @@ export default function Header({ toggleLanguage, language }) {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <header className="bg-primary shadow-md w-full">
+    <header className="shadow-md w-full">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-
         <div className="flex items-center justify-between w-full md:w-auto">
           <button
             onClick={toggleMenu}
@@ -92,7 +91,7 @@ export default function Header({ toggleLanguage, language }) {
       {menuOpen && (
         <div className="fixed inset-0 z-50 md:hidden bg-black/40 backdrop-blur-sm" onClick={toggleMenu}>
         <div
-          className="absolute top-0 left-0 right-0 bg-[--color-primary] shadow-md animate-slideDown"
+          className="absolute top-0 left-0 right-0 shadow-md animate-slideDown"
         >
           <div className="flex flex-col px-4 py-4 space-y-4">
             <CustomLink title="Home" url="/" currentPath={location.pathname} />

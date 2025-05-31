@@ -10,7 +10,7 @@ export default function FAQPage({ language }) {
   };
 
   return (
-    <div className="main-container-primary-gradient">
+    <div className="main-container-primary-gradient min-h-screen">
       <div className="max-w-3xl mx-auto p-6">
       <h2 className="text-3xl font-bold text-center mb-4 text-secondary">
         {HeaderLabel.Title[language]}
@@ -25,7 +25,7 @@ export default function FAQPage({ language }) {
             className="border border-gray-300 rounded-lg shadow-md transition-all"
           >
             <button
-              className="flex items-center justify-between w-full p-4 text-left text-lg font-medium text-secondary"
+              className="flex items-center justify-between w-full p-4 text-left lg:text-lg text-sm font-medium text-secondary"
               onClick={() => toggleFAQ(index)}
             >
               {faq.Question[language]}
@@ -40,7 +40,7 @@ export default function FAQPage({ language }) {
                 openIndex === index ? "max-h-40 p-4" : "max-h-0 p-0"
               }`}
             >
-              <p className="text-secondary">{faq.Answer[language]}</p>
+              <p className="text-secondary lg:text-lg text-sm font-light">{faq.Answer[language]}</p>
             </div>
           </div>
         ))}

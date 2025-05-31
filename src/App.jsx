@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col main-container-primary-gradient">
         <Header toggleLanguage={toggleLanguage} language={language} />
 
         <main className="flex-grow bg-primary">

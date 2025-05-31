@@ -70,7 +70,7 @@ body{
 .main-container-primary-gradient {
   @apply rounded-lg p-4;
   background-image: url('./assets/logo-background.png');
-  background-size: 80% auto;
+  background-size: 65% auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed; /* Makes it sticky */
@@ -82,7 +82,7 @@ body{
 @media (max-width: 768px) {
   .main-container-primary-gradient {
     background-image: url('./assets/rotated-logo-background.png');
-    background-size: 100% auto;
+    background-size: 85% auto;
     background-position: center center;
   }
 }

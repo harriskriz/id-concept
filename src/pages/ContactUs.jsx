@@ -3,7 +3,7 @@ import { HeaderLabel, ContactList } from "../constants/ContactUsConstant";
 const Contact = ({ icon, title, description, link, linkText, language}) => {
   return (
     <>
-      <div className="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+      <div className="p-6 rounded-lg transition-shadow flex flex-col items-center text-center">
         <div className="mb-4">{icon}</div>
         <h3 className="text-xl font-semibold text-secondary">{title[language]}</h3>
         <p className="text-secondary mt-2">{description[language]}</p>
@@ -39,7 +39,7 @@ const ContactSection = ({ language }) => {
 
 export default function ContactUs({ language }) {
   return (
-    <div className="main-container-primary-gradient">
+    <div className="main-container-primary-gradient min-h-screen">
       <ContactSection language={language} />
     </div>
   );
