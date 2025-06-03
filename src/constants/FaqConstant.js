@@ -36,7 +36,7 @@ export const Faqs = [
       id: "",
     },
     Answer: {
-      en: "The cost of our services varies depending on the size and complexity of the project. We offer bespoke solutions tailored to your specific needs, and we will provide a detailed proposal and cost estimate after our initial consultation.",
+      en: "The cost of our services varies depending on the size and complexity of the project. We offer tailored solutions to your specific needs, and we will provide a detailed proposal and cost estimate after our initial consultation.",
       id: "",
     },
   },
@@ -62,11 +62,11 @@ export const Faqs = [
   },
   {
     Question: {
-      en: "How do you ensure the space is free from electromagnetic radiation (EMR)?",
+      en: "How do you ensure the space is free from Electromagnetic Noise?",
       id: "",
     },
     Answer: {
-      en: "We employ advanced techniques and materials to minimize EMR in our designs, ensuring that your space remains as safe and healthy as possible. Additionally, we have all the necessary measuring equipment to assess and verify EMR levels, providing clear proof that our spaces meet the highest standards of safety and well-being. This commitment to EMR reduction is an integral part of our approach to creating healthier environments.",
+      en: "We employ advanced techniques and materials to harmonize Electromagnetic Noise in our designs, ensuring that your space remains as safe and healthy as possible. Additionally, we utilize advanced metrology tools to assess and verify Electromagnetic Noise levels, providing clear proof that our spaces meet the highest standards of safety and well-being. This commitment to Electromagnetic Noise harmonization is an integral part of our approach to creating healthier environments.",
       id: "",
     },
   },

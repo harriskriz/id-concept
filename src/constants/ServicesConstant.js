@@ -16,21 +16,51 @@ const CoreServices = {
     },
     {
       title: {
-        en: "Audiovisual Solutions",
+        en: "Audio-Visual Solutions",
         id: "",
       },
       description: {
-        en: "We design and implement state-of-the-art audiovisual systems that integrate seamlessly with the architecture of any room. From home theaters to corporate meeting rooms and music studios, our solutions are tailored to deliver crystal-clear audio, stunning visuals, and an immersive experience that exceeds expectations. Our systems are both high-performance and user-friendly, elevating your environment to a level of sophistication.",
+        en: "We design and implement state-of-the-art audio-visual systems that integrate seamlessly with the architecture of any room. From home theaters to corporate meeting rooms and music studios, our solutions are tailored to deliver crystal-clear audio, stunning visuals, and an immersive experience that exceeds expectations. Our systems are both high-performance and user-friendly, elevating your environment to a level of sophistication.",
         id: "",
       },
     },
     {
       title: {
-        en: "EMR Elimination",
+        en: "Electromagnetic Noise Harmonization",
         id: "",
       },
       description: {
-        en: "Our commitment to well-being extends beyond acoustic and visual design. We focus on reducing Electro Magnetic Radiation (EMR) in every space we design, ensuring a healthier environment for those who occupy it. By mitigating EMR exposure, we create balanced, safe spaces that promote better health and peace of mind.",
+        en: "Our commitment to well-being extends beyond acoustic and visual design. We focus on harmonizing Electromagnetic Noise in every space we design, ensuring a healthier environment for those who occupy it. By mitigating Electromagnetic Noise exposure, we create balanced, safe spaces that promote better health and peace of mind.",
+        id: "",
+      },
+    },
+  ],
+};
+
+const PersonalizedAcousticDesign = {
+  Type: {
+    en: "Personalized Acoustic Design for Every Space",
+    id: "",
+  },
+  List: [
+    {
+      title: { en: "Acoustic Customization for Different Room Functions", id: "" },
+      description: {
+        en: "We offer tailored acoustic designs for a variety of spaces, such as home theaters, music rooms, meeting rooms, and bedrooms. Each room has distinct acoustic requirements, and we provide the perfect solutions for each.",
+        id: "",
+      },
+    },
+    {
+      title: { en: "Custom Acoustic Material Selection", id: "" },
+      description: {
+        en: "We provide a wide range of acoustic materials that can be customized to match the room’s aesthetic. Options include paintable acoustic panels, premium fabric wraps, and natural materials such as wood or stone, adding a luxurious touch to your space.",
+        id: "",
+      },
+    },
+    {
+      title: { en: "Acoustic Adjustment for Large and Small Spaces", id: "" },
+      description: {
+        en: "Whether large or small, every room requires a unique approach to sound control. We design solutions that optimize acoustics in expansive spaces like auditoriums or ballrooms, as well as in more intimate settings like music studios or bedrooms.",
         id: "",
       },
     },
@@ -53,7 +83,7 @@ const CustomAudioVisualSolutions = {
     {
       title: { en: "Audio-Visual Solutions for Corporate Spaces", id: "" },
       description: {
-        en: "We provide customized audio-visual systems for conference rooms, meeting spaces, and presentation areas. Our solutions integrate sound systems, projectors, screens, and video conferencing equipment, prioritizing ease of use and optimal sound quality.",
+        en: "Audio-Visual Solutions for Corporate Spaces: We provide customized audio-visual systems for conference rooms, meeting spaces, and presentation areas. Our solutions integrate sound systems, projectors, screens, and video conferencing equipment, prioritizing ease of use and optimal sound quality.",
         id: "",
       },
     },
@@ -92,21 +122,21 @@ const CustomLightingDesign = {
 
 const EMRSolutions = {
   Type: {
-    en: "Custom Designs for Electro Magnetic Radiation (EMR) Elimination",
+    en: "Custom Designs for Electromagnetic Noise Harmonization",
     id: "",
   },
   List: [
     {
-      title: { en: "EMR Solutions for Health", id: "" },
+      title: { en: "Electromagnetic Noise Solutions for Health", id: "" },
       description: {
-        en: "Our services focus on identifying and reducing Electro Magnetic Radiation exposure in your space. We use specialized materials that block EMR and create a healthier, stress-free environment.",
+        en: "Our services focus on identifying and harmonizing exposure in your space. We use specialized materials that harmonize Electromagnetic Noise and create a healthier, stress-free environment.",
         id: "",
       },
     },
     {
       title: { en: "Health and Wellness Design", id: "" },
       description: {
-        en: "We provide consultations on how interior design can impact your health and well-being. We offer solutions that incorporate design elements aimed at minimizing EMR exposure, contributing to a balanced and harmonious environment.",
+        en: "We provide consultations on how interior design can impact your health and well-being. We offer solutions that incorporate design elements aimed at minimizing Electromagnetic Noise exposure, contributing to a balanced and harmonious environment.",
         id: "",
       },
     },
@@ -152,7 +182,7 @@ const SmartTechnology = {
     {
       title: { en: "Centralized Audio-Visual and Lighting Control", id: "" },
       description: {
-        en: "Our solutions include centralized control via apps or touchscreens, enabling seamless adjustments to volume, lighting modes, and room temperature to create a fully personalized experience.",
+        en: "Our solutions include centralized control via apps or touchscreens, enabling seamless adjustments to volume, lighting modes, and room temperature to create a uniquely curated experience.",
         id: "",
       },
     },

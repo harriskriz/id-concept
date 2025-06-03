@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular);
+/* @import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular);
 
 @font-face {
     font-family: "PAG Bankas W00 Regular";
@@ -20,17 +20,31 @@
     url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.svg#Posterama 2001 W04 Regular")format("svg");
-}
-@font-face {
+} */
+/* @font-face {
   font-family: 'text-default';
   src: url("/src/assets/fonts/myriadroman/MYRIADPRO-REGULAR.OTF");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+/* @font-face {
+  font-family: 'text-header';
+  src: url("/src/assets/fonts/AkzidGrtskNext-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+@font-face {
+  font-family: 'text-default';
+  src: url("/src/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'text-header';
-  src: url("/src/assets/fonts/AkzidGrtskNext-Regular.ttf");
+  src: url("/src/assets/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -47,8 +61,10 @@ body{
   --color-secondary-button: #008080;
   --color-accent: #2be031;
 
+  /* --font-text-header: 'PAG Bankas W00 Regular', sans-serif; */
+  
   --font-text-default: 'text-default', sans-serif;
-  --font-text-header: 'PAG Bankas W00 Regular', sans-serif;
+  --font-text-header: 'text-header', sans-serif;
 }
 
 .text-secondary {
