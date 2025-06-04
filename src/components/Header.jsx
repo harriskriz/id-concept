@@ -77,6 +77,7 @@ export default function Header({ toggleLanguage, language }) {
           <CustomLink title="Services" url="/services" currentPath={location.pathname} />
           <CustomLink title="Contact Us" url="/contact-us" currentPath={location.pathname} />
           <CustomLink title="FAQ" url="/faq" currentPath={location.pathname} />
+          <CustomLink title="Gallery" url="/gallery" currentPath={location.pathname} />
           {useMultipleLanguage && (
             <LanguageSwitcher toggleLanguage={toggleLanguage} language={language} />
           )}
@@ -98,6 +99,7 @@ export default function Header({ toggleLanguage, language }) {
             <CustomLink title="Services" url="/services" currentPath={location.pathname} />
             <CustomLink title="Contact Us" url="/contact-us" currentPath={location.pathname} />
             <CustomLink title="FAQ" url="/faq" currentPath={location.pathname} />
+            <CustomLink title="Gallery" url="/gallery" currentPath={location.pathname} />
             {useMultipleLanguage && (
               <div className="pt-2">
                 <LanguageSwitcher toggleLanguage={toggleLanguage} language={language} />

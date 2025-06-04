@@ -7,6 +7,26 @@ export const HomeLabel = {
     en: "Transforming Spaces into Sanctuaries of Sound and Style",
     id: "Transforming Spaces into Sanctuaries of Sound and Style",
   },
+  CompanyIdentity: {
+    title: {
+      en: "Who are we?",
+      id: "",
+    },
+    Paragraphs: [
+      {
+        description: {
+          en: "At ID Concept, we specialize in the creation of acoustically refined, serene environments that exude both luxury and tranquility. From private sanctuaries to elite corporate spaces, our expertise in Acoustic Interior Design transforms every room into a sanctuary of unparalleled serenity. We meticulously curate environments free from disruptive Electromagnetic Noise, cultivating a healthier, more balanced atmosphere for optimal well-being.",
+          id: "",
+        },
+      },
+      {
+        description: {
+          en: "Our tailored solutions are designed to deliver superior acoustics and seamless audio-visual integration, including home theaters, music studios, boardrooms, and more. Each space we design is a masterpiece of craftsmanship, offering exceptional acoustics, immersive visuals, and enduring elegance. With years of expertise and a commitment to perfection, we bring your vision to life with unmatched precision, style, and sophistication.",
+          id: "",
+        },
+      },
+    ],
+  },
   History: {
     title: {
       en: "History",

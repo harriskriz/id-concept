@@ -40,6 +40,16 @@ const CompanyProfile = ({ language }) => (
   </div>
 );
 
+const CompanyIdentity = ({ language }) => (
+  <Section title={HomeLabel.CompanyIdentity.title[language]}>
+    {HomeLabel.CompanyIdentity.Paragraphs.map((paragraph, index) => (
+      <p key={index} className="mb-4 text-secondary leading-relaxed">
+        {paragraph.description[language]}
+      </p>
+    ))}
+  </Section>
+);
+
 const History = ({ language }) => (
   <Section title={HomeLabel.History.title[language]}>
     {HomeLabel.History.Paragraphs.map((paragraph, index) => (
@@ -82,8 +92,9 @@ export default function Home({ language }) {
   return (
     <div className="main-container-primary-gradient mx-auto p-6">
       <CompanyProfile language={language} />
+      <CompanyIdentity language={language} />
       <History language={language} />
-      <CompetitiveAdvantages language={language} />
+      {/* <CompetitiveAdvantages language={language} /> */}
       <Vision language={language} />
       <Mission language={language} />
     </div>

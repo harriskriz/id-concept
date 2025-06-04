@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Faq from "./pages/Faq";
+import Gallery from "./pages/Gallery";
 
 export default function App() {
   const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/services" element={<Services language={language} />} />
             <Route path="/contact-us" element={<ContactUs language={language} />} />
             <Route path="/faq" element={<Faq language={language} />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </main>
 
