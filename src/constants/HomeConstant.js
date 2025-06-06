@@ -9,7 +9,7 @@ export const HomeLabel = {
   },
   CompanyIdentity: {
     title: {
-      en: "Who are we?",
+      en: "",
       id: "",
     },
     Paragraphs: [

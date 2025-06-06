@@ -19,6 +19,14 @@ const Section = ({
   </div>
 );
 
+const SectionWithoutHeader = ({
+  children
+}) => (
+  <div className="p-6 my-6">
+    {children}
+  </div>
+);
+
 const CompanyProfile = ({ language }) => (
   <div className="text-center py-10">
     <h1 className="text-5xl mb-4 text-accent">
@@ -41,13 +49,13 @@ const CompanyProfile = ({ language }) => (
 );
 
 const CompanyIdentity = ({ language }) => (
-  <Section title={HomeLabel.CompanyIdentity.title[language]}>
+  <SectionWithoutHeader>
     {HomeLabel.CompanyIdentity.Paragraphs.map((paragraph, index) => (
       <p key={index} className="mb-4 text-secondary leading-relaxed">
         {paragraph.description[language]}
       </p>
     ))}
-  </Section>
+  </SectionWithoutHeader>
 );
 
 const History = ({ language }) => (
