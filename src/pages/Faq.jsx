@@ -37,7 +37,7 @@ export default function FAQPage({ language }) {
             </button>
             <div
               className={`overflow-hidden transition-all duration-300 ${
-                openIndex === index ? "max-h-40 p-4" : "max-h-0 p-0"
+                openIndex === index ? "max-h-40 overflow-y-auto custom-scrollbar p-4" : "max-h-0 p-0"
               }`}
             >
               <p className="text-secondary lg:text-lg text-sm font-light">{faq.Answer[language]}</p>
