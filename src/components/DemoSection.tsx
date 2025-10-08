@@ -19,10 +19,10 @@ export const DemoSection = () => {
           {/* Left Column - Text Content */}
           <div className="order-1 lg:order-1">
             <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-textPrimary mb-6 uppercase tracking-wide">
-              Acoustic Treatment Demonstration
+              The Art of Acoustic Balance
             </h3>
             <p className="text-sm md:text-sm text-textSecondary leading-relaxed">
-              This video demonstrates the profound impact of different acoustic environments on a single sound source.
+              This demonstration reveals how varying acoustic conditions profoundly influence the clarity, warmth, and spatial character of a single sound source.
             </p>
           </div>
 
