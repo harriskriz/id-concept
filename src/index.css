@@ -1,118 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
-@import url(https://db.onlinewebfonts.com/c/f9ce8709ed9126ad00b92098b0060cb1?family=PAG+Bankas+W00+Regular);
-
-@font-face {
-    font-family: "PAG Bankas W00 Regular";
-    src: url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.eot");
-    src: url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/f9ce8709ed9126ad00b92098b0060cb1.svg#PAG Bankas W00 Regular")format("svg");
-}
-
-/* @import url(https://db.onlinewebfonts.com/c/ea250342ec4016561ba9e791c2f39c11?family=Posterama+2001+W04+Regular);
-@font-face {
-    font-family: "Posterama 2001 W04 Regular";
-    src: url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.eot");
-    src: url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/ea250342ec4016561ba9e791c2f39c11.svg#Posterama 2001 W04 Regular")format("svg");
-} */
-/* @font-face {
-  font-family: 'text-default';
-  src: url("/src/assets/fonts/myriadroman/MYRIADPRO-REGULAR.OTF");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
-@font-face {
-  font-family: 'text-default';
-  src: url("/src/assets/fonts/AkzidGrtskNext-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-/* @font-face {
-  font-family: 'text-default';
-  src: url("/src/assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
-/* @font-face {
-  font-family: 'text-header';
-  src: url("/src/assets/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
-body{
-  overflow-x: hidden;
-  background-color: #2f333a;
-}
 
 @theme {
-  --color-primary: #2f333a; 
-  --color-secondary: #a9aaad; 
-  --color-primary-button: #007BFF; 
-  --color-secondary-button: #008080;
-  --color-accent: #2be031;
+  /* Background colors */
+  --color-background: #1a1a1a;
+  --color-background-secondary: #0d0d0d;
 
-  --font-text-header: 'PAG Bankas W00 Regular', sans-serif;
-  
-  --font-text-default: 'text-header', sans-serif;
-  /* --font-text-header: 'text-header', sans-serif; */
+  /* Text colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b8b8b8;
+  --color-text-muted: #808080;
+  --color-text-accent: #7FFF00;
+
+  /* Accent colors */
+  --color-accent: #7FFF00;
+  --color-accent-variant: #6de000;
+
+  /* Border colors */
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-accent: rgba(127, 255, 0, 0.2);
+
+  /* Glassmorphism effect */
+  --color-glassmorphism: rgba(42, 42, 42, 0.6);
 }
 
-.text-secondary {
-  @apply text-gray-200 font-text-default;
-  /* font-family: "text-default"; */
-}
+@tailwind utilities;
 
-.text-secondary-nav {
-  @apply text-yellow-300 font-text-header;
-  /* font-family: "text-default"; */
-}
-
-.text-accent {
-  @apply text-green-500 font-text-header;
-  /* font-family: "text-default"; */
-}
-
-/* Example of using a background gradient based on your primary color (subtle) */
-.main-container-primary-gradient {
-  @apply rounded-lg p-4;
-  background-image: url('./assets/logo-background.png');
-  background-size: 65% auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed; /* Makes it sticky */
-  z-index: 0;
-  position: relative;
-}
-
-/* Rotate background on small screens */
-@media (max-width: 768px) {
-  .main-container-primary-gradient {
-    background-image: url('./assets/rotated-logo-background.png');
-    background-size: 85% auto;
-    background-position: center center;
-  }
-}
-
-/* In your CSS file or in a style tag */
-.custom-scrollbar::-webkit-scrollbar {
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
   width: 8px;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #9ca3af; /* Tailwind gray-400 */
-  border-radius: 9999px;
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
 }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
+::-webkit-scrollbar-thumb {
+  background: #7FFF00;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6de000;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in 1s ease-out 0.5s both;
+}
+
+.animate-fade-in-delayed-2 {
+  animation: fade-in 1s ease-out 1s both;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

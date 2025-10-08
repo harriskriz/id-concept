@@ -1,0 +1,454 @@
+{
+    "designSystem": {
+      "metadata": {
+        "name": "1D Concept Design System",
+        "type": "Acoustic Interior Design",
+        "style": "Professional, Minimal, Dark Elegance"
+      },
+      "colorPalette": {
+        "primary": {
+          "background": "#1a1a1a",
+          "backgroundSecondary": "#0d0d0d",
+          "backgroundAccent": "rgba(0, 0, 0, 0.6)"
+        },
+        "accent": {
+          "primary": "#7FFF00",
+          "primaryVariant": "#6de000",
+          "description": "Vibrant lime green for CTAs and emphasis"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#b8b8b8",
+          "muted": "#808080",
+          "accent": "#7FFF00"
+        },
+        "neutral": {
+          "gray100": "#f5f5f5",
+          "gray200": "#e0e0e0",
+          "gray300": "#cccccc",
+          "gray700": "#4a4a4a",
+          "gray800": "#2a2a2a",
+          "gray900": "#1a1a1a"
+        }
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          "heading": "Inter, sans-serif",
+          "body": "Inter, sans-serif"
+        },
+        "scale": {
+          "h1": {
+            "fontSize": "48px",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "letterSpacing": "-0.02em",
+            "textTransform": "uppercase"
+          },
+          "h2": {
+            "fontSize": "36px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "letterSpacing": "-0.01em",
+            "textTransform": "uppercase"
+          },
+          "h3": {
+            "fontSize": "24px",
+            "fontWeight": "600",
+            "lineHeight": "1.4",
+            "letterSpacing": "0"
+          },
+          "subtitle": {
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "1.5",
+            "letterSpacing": "0.02em"
+          },
+          "body": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6",
+            "letterSpacing": "0"
+          },
+          "bodySmall": {
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "1.5",
+            "letterSpacing": "0"
+          },
+          "caption": {
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "1.4",
+            "letterSpacing": "0.01em"
+          }
+        },
+        "styleTreatments": {
+          "heroHeading": {
+            "fontSize": "clamp(32px, 5vw, 64px)",
+            "fontWeight": "300",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.15em",
+            "color": "#e0e0e0"
+          },
+          "sectionHeading": {
+            "fontSize": "clamp(24px, 3vw, 36px)",
+            "fontWeight": "700",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "color": "#FFFFFF"
+          },
+          "accentText": {
+            "color": "#7FFF00",
+            "fontWeight": "600"
+          }
+        }
+      },
+      "spacing": {
+        "scale": {
+          "xs": "4px",
+          "sm": "8px",
+          "md": "16px",
+          "lg": "24px",
+          "xl": "32px",
+          "2xl": "48px",
+          "3xl": "64px",
+          "4xl": "96px",
+          "5xl": "128px"
+        },
+        "sections": {
+          "paddingVertical": "clamp(60px, 10vh, 120px)",
+          "paddingHorizontal": "clamp(20px, 5vw, 80px)"
+        },
+        "containers": {
+          "maxWidth": "1200px",
+          "paddingInline": "clamp(20px, 5vw, 40px)"
+        }
+      },
+      "layout": {
+        "containers": {
+          "maxWidth": "1200px",
+          "centerAligned": true,
+          "paddingInline": "var(--spacing-container)"
+        },
+        "grid": {
+          "columns": 12,
+          "gap": "24px",
+          "responsive": {
+            "mobile": "1 column",
+            "tablet": "2 columns",
+            "desktop": "3 columns"
+          }
+        },
+        "sections": {
+          "fullWidth": true,
+          "minHeight": "auto",
+          "verticalSpacing": "80px"
+        }
+      },
+      "components": {
+        "navigation": {
+          "position": "fixed top",
+          "background": "rgba(26, 26, 26, 0.95)",
+          "backdropFilter": "blur(10px)",
+          "height": "70px",
+          "padding": "0 clamp(20px, 5vw, 80px)",
+          "alignment": "space-between",
+          "links": {
+            "color": "#FFFFFF",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "textTransform": "capitalize",
+            "hoverColor": "#7FFF00",
+            "transition": "color 0.3s ease"
+          },
+          "activeIndicator": {
+            "type": "color change",
+            "color": "#7FFF00"
+          }
+        },
+        "hero": {
+          "layout": "full viewport height",
+          "alignment": "center vertical and horizontal",
+          "background": "dark with decorative wave graphics",
+          "textAlignment": "center",
+          "elements": {
+            "logo": {
+              "position": "center top",
+              "opacity": "0.6",
+              "size": "large"
+            },
+            "tagline": {
+              "fontSize": "clamp(18px, 2.5vw, 24px)",
+              "color": "#7FFF00",
+              "marginBottom": "16px"
+            },
+            "heading": {
+              "fontSize": "clamp(28px, 4vw, 48px)",
+              "color": "#FFFFFF",
+              "lineHeight": "1.3"
+            },
+            "keywordRow": {
+              "display": "flex horizontal",
+              "gap": "40px",
+              "fontSize": "clamp(24px, 3.5vw, 48px)",
+              "fontWeight": "300",
+              "letterSpacing": "0.15em",
+              "textTransform": "uppercase",
+              "color": "#808080",
+              "marginTop": "48px"
+            }
+          }
+        },
+        "card": {
+          "background": "rgba(42, 42, 42, 0.6)",
+          "border": "1px solid rgba(255, 255, 255, 0.1)",
+          "borderRadius": "8px",
+          "padding": "32px",
+          "backdropFilter": "blur(10px)",
+          "hover": {
+            "transform": "translateY(-4px)",
+            "boxShadow": "0 8px 32px rgba(127, 255, 0, 0.1)",
+            "borderColor": "rgba(127, 255, 0, 0.3)",
+            "transition": "all 0.3s ease"
+          }
+        },
+        "serviceCard": {
+          "background": "rgba(26, 26, 26, 0.8)",
+          "border": "1px solid rgba(127, 255, 0, 0.2)",
+          "borderRadius": "4px",
+          "padding": "32px 24px",
+          "textAlign": "left",
+          "heading": {
+            "color": "#7FFF00",
+            "fontSize": "20px",
+            "fontWeight": "600",
+            "marginBottom": "16px",
+            "textTransform": "none"
+          },
+          "body": {
+            "color": "#b8b8b8",
+            "fontSize": "14px",
+            "lineHeight": "1.6"
+          }
+        },
+        "processStep": {
+          "layout": "icon top, text below",
+          "alignment": "center",
+          "icon": {
+            "size": "64px",
+            "color": "#7FFF00",
+            "marginBottom": "24px",
+            "style": "line art, minimal"
+          },
+          "description": {
+            "fontSize": "14px",
+            "color": "#b8b8b8",
+            "textAlign": "center",
+            "maxWidth": "280px"
+          }
+        },
+        "button": {
+          "primary": {
+            "background": "#7FFF00",
+            "color": "#1a1a1a",
+            "padding": "14px 32px",
+            "borderRadius": "4px",
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "border": "none",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "hover": {
+              "background": "#6de000",
+              "transform": "translateY(-2px)",
+              "boxShadow": "0 4px 16px rgba(127, 255, 0, 0.3)"
+            }
+          },
+          "secondary": {
+            "background": "transparent",
+            "color": "#7FFF00",
+            "border": "2px solid #7FFF00",
+            "padding": "12px 30px",
+            "borderRadius": "4px",
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "hover": {
+              "background": "rgba(127, 255, 0, 0.1)",
+              "borderColor": "#6de000"
+            }
+          }
+        },
+        "divider": {
+          "type": "underline accent",
+          "width": "60px",
+          "height": "3px",
+          "background": "#7FFF00",
+          "margin": "16px auto",
+          "position": "below headings"
+        }
+      },
+      "decorativeElements": {
+        "waveGraphics": {
+          "style": "flowing sine waves",
+          "color": "rgba(255, 255, 255, 0.05)",
+          "placement": "background layers",
+          "animation": "subtle flow or static",
+          "purpose": "add visual interest without distraction"
+        },
+        "logoWatermark": {
+          "opacity": "0.03-0.08",
+          "size": "very large",
+          "position": "center or bottom sections",
+          "color": "white or gray"
+        },
+        "gradientOverlays": {
+          "type": "subtle radial gradients",
+          "opacity": "0.3-0.5",
+          "purpose": "depth and focus"
+        }
+      },
+      "effects": {
+        "glassmorphism": {
+          "background": "rgba(42, 42, 42, 0.6)",
+          "backdropFilter": "blur(10px)",
+          "border": "1px solid rgba(255, 255, 255, 0.1)"
+        },
+        "shadows": {
+          "subtle": "0 2px 8px rgba(0, 0, 0, 0.2)",
+          "medium": "0 4px 16px rgba(0, 0, 0, 0.3)",
+          "elevated": "0 8px 32px rgba(127, 255, 0, 0.1)",
+          "glow": "0 0 20px rgba(127, 255, 0, 0.3)"
+        },
+        "transitions": {
+          "default": "all 0.3s ease",
+          "fast": "all 0.15s ease",
+          "slow": "all 0.5s ease"
+        }
+      },
+      "designPrinciples": {
+        "darkTheme": {
+          "description": "Sophisticated dark backgrounds create elegance and focus",
+          "primaryBackground": "#1a1a1a to #0d0d0d",
+          "contrast": "high contrast with white text and lime green accents"
+        },
+        "accentUsage": {
+          "description": "Lime green (#7FFF00) used sparingly for maximum impact",
+          "applications": [
+            "Primary CTAs",
+            "Section headings",
+            "Navigation active states",
+            "Icon highlights",
+            "Borders on featured cards"
+          ]
+        },
+        "whitespace": {
+          "description": "Generous spacing creates breathing room",
+          "approach": "More whitespace around key elements, comfortable reading distances"
+        },
+        "hierarchy": {
+          "description": "Clear visual hierarchy through size, weight, and color",
+          "levels": [
+            "Hero sections with large, centered content",
+            "Section headings with underline accent",
+            "Body text in muted gray for readability",
+            "Small captions and credits"
+          ]
+        },
+        "minimalism": {
+          "description": "Clean, uncluttered layouts with purpose-driven elements",
+          "avoid": [
+            "Excessive borders",
+            "Busy backgrounds",
+            "Multiple competing CTAs",
+            "Decorative elements without purpose"
+          ]
+        },
+        "modernProfessional": {
+          "description": "Contemporary design with timeless professionalism",
+          "characteristics": [
+            "Sans-serif typography",
+            "Subtle animations and transitions",
+            "Grid-based layouts",
+            "Consistent spacing system",
+            "High-quality imagery with purpose"
+          ]
+        }
+      },
+      "contentStructure": {
+        "sections": [
+          {
+            "name": "Hero",
+            "purpose": "First impression, brand identity, core message",
+            "components": ["logo watermark", "tagline", "main heading", "keyword showcase"],
+            "height": "100vh"
+          },
+          {
+            "name": "About/Intro",
+            "purpose": "Company description and value proposition",
+            "components": ["body text paragraphs", "centered layout"],
+            "background": "dark with subtle decoration"
+          },
+          {
+            "name": "Media/Demo",
+            "purpose": "Visual proof or demonstration",
+            "components": ["media embed", "description text", "caption"],
+            "layout": "side-by-side or stacked"
+          },
+          {
+            "name": "Competitive Advantages",
+            "purpose": "Differentiation and expertise",
+            "components": ["section heading", "body text"],
+            "emphasis": "clear, confident messaging"
+          },
+          {
+            "name": "Services",
+            "purpose": "Core offerings",
+            "components": ["service cards in grid", "icons", "descriptions"],
+            "layout": "3-column grid on desktop, stacked on mobile"
+          },
+          {
+            "name": "Process",
+            "purpose": "How it works, workflow steps",
+            "components": ["icon steps", "short descriptions"],
+            "layout": "horizontal flow or grid"
+          },
+          {
+            "name": "Contact/Footer",
+            "purpose": "Contact information and CTA",
+            "components": ["contact details", "email", "phone", "social links"],
+            "styling": "minimal, organized"
+          }
+        ]
+      },
+      "responsiveDesign": {
+        "breakpoints": {
+          "mobile": "320px - 767px",
+          "tablet": "768px - 1023px",
+          "desktop": "1024px+"
+        },
+        "approach": {
+          "typography": "Use clamp() for fluid scaling",
+          "layout": "Stack columns on mobile, grid on desktop",
+          "spacing": "Reduce padding on smaller screens",
+          "navigation": "Hamburger menu on mobile",
+          "images": "Scale proportionally, maintain aspect ratios"
+        }
+      },
+      "accessibility": {
+        "colorContrast": "Ensure 4.5:1 ratio for body text, 3:1 for large text",
+        "focusStates": "Visible focus indicators with lime green outline",
+        "semanticHTML": "Use proper heading hierarchy (h1, h2, h3)",
+        "altText": "Provide descriptive alt text for all images",
+        "keyboardNavigation": "All interactive elements keyboard accessible"
+      },
+      "implementationNotes": {
+        "preferredFramework": "React with Tailwind CSS or styled-components",
+        "imageOptimization": "Use WebP format, lazy loading for below-fold images",
+        "performance": "Minimize animation complexity, use CSS transforms",
+        "codeQuality": "Component-based architecture, reusable design tokens",
+        "cssCustomProperties": "Define design tokens as CSS variables for consistency",
+        "deploymentConsiderations": "Optimize for fast load times, mobile-first approach"
+      }
+    }
+  }
