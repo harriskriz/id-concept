@@ -104,8 +104,7 @@ export const specializedServices: ServiceSection = {
       title: "Custom Designs for Electromagnetic Noise Harmonization",
       description: "Specialized solutions for electromagnetic well-being.",
       items: [
-        "Electromagnetic Noise Solutions for Health - Our services focus on identifying and harmonizing exposure in your space. We use specialized materials that harmonize Electromagnetic Noise and create a healthier, stress-free environment.",
-        "Health and Wellness Design - We provide consultations on how interior design can impact your health and well-being. We offer solutions that incorporate design elements aimed at minimizing Electromagnetic Noise exposure, contributing to a balanced and harmonious environment."
+        "Electromagnetic Wellness Design - We integrate advanced design principles that harmonize Electromagnetic Noise — a subtle yet impactful factor influencing human well-being. Through precise material selection and spatial configuration, our approach promotes balanced environments that enhance comfort, focus, and holistic health."
       ]
     }
   ]
