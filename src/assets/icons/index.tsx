@@ -1,13 +1,13 @@
 export const WhatsappIcon = () => {
   return (
     <svg
-      fill="#8fe960"
+      fill="#5dbf4f"
       width="24px"
       height="24px"
       viewBox="0 0 32 32"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#8fe960"
+      stroke="#5dbf4f"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -49,8 +49,8 @@ export const MailIcon = () => {
       height="24px"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      fill="#8fe960"
-      stroke="#8fe960"
+      fill="#5dbf4f"
+      stroke="#5dbf4f"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -70,7 +70,7 @@ export const MailIcon = () => {
               <polyline
                 fill="none"
                 points="4 8.2 12 14.1 20 8.2"
-                stroke="#8fe960"
+                stroke="#5dbf4f"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
@@ -80,7 +80,7 @@ export const MailIcon = () => {
                 height="14"
                 rx="2"
                 ry="2"
-                stroke="#8fe960"
+                stroke="#5dbf4f"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
