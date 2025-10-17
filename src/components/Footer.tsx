@@ -25,9 +25,10 @@ export const Footer = () => {
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:admin@idconcept.pro"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=admin@idconcept.pro&su=Inquiry%20from%20Website"
                 className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors duration-300"
                 aria-label="Email us at admin@idconcept.pro"
+                target="_blank"
               >
                 <MailIcon />
                 <span>admin@idconcept.pro</span>

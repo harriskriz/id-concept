@@ -85,8 +85,9 @@ export const FaqSection = () => {
               Our team is here to help. Contact us for personalized assistance with your project.
             </p>
             <a
-              href="mailto:admin@idconcept.pro?subject=Question about ID Concept Services"
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=admin@idconcept.pro&su=Inquiry%20from%20Website"
               className="bg-accent hover:bg-accentVariant text-background font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 inline-block text-center"
+              target="_blank"
             >
               Get in Touch
             </a>
