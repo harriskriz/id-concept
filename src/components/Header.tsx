@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MailIcon } from "../assets/icons";
+import CompanyEmail from "./CompanyEmail";
 
 interface NavItem {
   label: string;
@@ -20,15 +21,7 @@ const TopBar = () => {
     <div className="bg-background text-textSecondary text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-end items-center h-10 space-x-6">
-          <a
-            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=admin@idconcept.pro&su=Inquiry%20from%20Website"
-            className="flex items-center gap-2 text-textSecondary hover:text-accent transition-colors duration-300"
-            aria-label="Email us at admin@idconcept.pro"
-            target="_blank"
-          >
-            <MailIcon />
-            <span>admin@idconcept.pro</span>
-          </a>
+          <CompanyEmail icon={<MailIcon />} />
         </div>
       </div>
     </div>

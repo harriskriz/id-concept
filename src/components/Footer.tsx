@@ -1,4 +1,5 @@
 import Logo from "../assets/images/logo.jpg";
+import CompanyEmail from "./CompanyEmail";
 import { MailIcon } from "../assets/icons";
 
 export const Footer = () => {
@@ -24,15 +25,7 @@ export const Footer = () => {
               Reach Us
             </h3>
             <div className="space-y-3">
-              <a
-                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=admin@idconcept.pro&su=Inquiry%20from%20Website"
-                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors duration-300"
-                aria-label="Email us at admin@idconcept.pro"
-                target="_blank"
-              >
-                <MailIcon />
-                <span>admin@idconcept.pro</span>
-              </a>
+              <CompanyEmail icon={<MailIcon /> } />
               <a
                 href="tel:+62816357000"
                 className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors duration-300"
